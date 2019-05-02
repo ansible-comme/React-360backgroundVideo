@@ -18,7 +18,7 @@ function init(bundle, parent, options = {}) {
 
     const player = r360.compositor.createVideoPlayer('myplayer');
     player.setSource('./static_assets/Test.mp4', '3DTB');
-    r360.compositor.setBackgroundVideo('myplayer');
+    player.setMuted(false);
 
   // Load the initial environment
   // r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
